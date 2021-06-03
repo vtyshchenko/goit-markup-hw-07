@@ -982,12 +982,12 @@ body {
   margin-bottom: 4px;
 }
 
-.modal-input-info:hover,
+/* .modal-input-info:hover, */
 .modal-input-group:focus-within > .modal-input-info {
   border: 1px solid var(--accent-color);
 }
 
-.modal-input-info:hover + .modal-input-icon,
+/* .modal-input-info:hover + .modal-input-icon, */
 .modal-input-group:focus-within > .modal-input-icon {
   fill: var(--accent-color);
 }
@@ -1041,7 +1041,7 @@ body {
   transition: border var(--anim-duration) var(--anim-timing-function);
 }
 
-.modal-comment:hover,
+/* .modal-comment:hover, */
 .modal-group-comment:focus-within > .modal-comment {
   border: 1px solid var(--accent-color);
 }
@@ -1081,6 +1081,8 @@ body {
   transition: color var(--anim-duration) var(--anim-timing-function);
 }
 
+.modal-confirm-checkbox:focus + .modal-checkbox-icon,
+.modal-confirm-checkbox:focus ~ .modal-confirm-conditions,
 .modal-confirm:focus > .modal-checkbox-icon,
 .modal-confirm:hover > .modal-checkbox-icon,
 .modal-confirm:focus,
