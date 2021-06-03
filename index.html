@@ -503,70 +503,72 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      <button class="button-close" type="button" data-modal-close>
-        <svg class="close-icon">
-          <use href="./images/icons.svg#icon-close-button"></use>
-        </svg>
-      </button>
-      <form class="modal">
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <div class="modal-inputs">
-          <label class="modal-group">
-            <span class="modal-label">Имя</span>
-            <span class="modal-input-group">
-              <input class="modal-input-info" type="text" name="name" />
-              <svg class="modal-input-icon">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </span>
-          </label>
+      <div class="modal">
+        <button class="button-close" type="button" data-modal-close>
+          <svg class="close-icon">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="modal-inputs">
+            <label class="modal-group">
+              <span class="modal-label">Имя</span>
+              <span class="modal-input-group">
+                <input class="modal-input-info" type="text" name="name" />
+                <svg class="modal-input-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </span>
+            </label>
 
-          <label class="modal-group">
-            <span class="modal-label">Телефон</span>
-            <span class="modal-input-group">
-              <input class="modal-input-info" type="tel" name="phome" />
-              <svg class="modal-input-icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </span>
-          </label>
+            <label class="modal-group">
+              <span class="modal-label">Телефон</span>
+              <span class="modal-input-group">
+                <input class="modal-input-info" type="tel" name="phome" />
+                <svg class="modal-input-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </label>
 
-          <label class="modal-group">
-            <span class="modal-label">Почта</span>
-            <span class="modal-input-group">
-              <input class="modal-input-info" type="email" name="email" />
-              <svg class="modal-input-icon">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </span>
-          </label>
+            <label class="modal-group">
+              <span class="modal-label">Почта</span>
+              <span class="modal-input-group">
+                <input class="modal-input-info" type="email" name="email" />
+                <svg class="modal-input-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </span>
+            </label>
 
-          <div class="modal-group-comment">
-            <label class="modal-label" for="comment">Комментарий</label>
-            <textarea
-              class="modal-comment"
-              name="comment"
-              id="comment"
-              placeholder="Введите текст"
-            ></textarea>
+            <div class="modal-group-comment">
+              <label class="modal-label" for="comment">Комментарий</label>
+              <textarea
+                class="modal-comment"
+                name="comment"
+                id="comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <label class="modal-confirm">
+              <input
+                class="modal-confirm-checkbox visually-hidden"
+                type="checkbox"
+                name="confirm"
+              />
+              <span class="modal-checkbox-icon"></span>
+              <span class="modal-confirm-conditions"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="">Условия договора</a>
+              </span>
+            </label>
+
+            <button class="modal-button-submit" type="submit">Отправить</button>
           </div>
-
-          <label class="modal-confirm">
-            <input
-              class="modal-confirm-checkbox visually-hidden"
-              type="checkbox"
-              name="confirm"
-            />
-            <span class="modal-checkbox-icon"></span>
-            <span class="modal-confirm-conditions"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a>
-            </span>
-          </label>
-
-          <button class="modal-button-submit" type="submit">Отправить</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>

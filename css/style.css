@@ -174,7 +174,7 @@ body {
 }
 
 .mail-and-tel .mt-item + .mt-item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .mail-icon {
@@ -695,7 +695,7 @@ body {
 .clients-item:focus,
 .clients-item:active,
 .clients-item:hover {
-  color: var(--color-blue);
+  color: var(--accent-color);
 }
 /* ################### END CLIENTS ################### */
 /* **************** END INDEX HTML **************** */
@@ -884,7 +884,7 @@ body {
 }
 
 .backdrop.is-hidden .button-close {
-  transform: translate(202px, -255px) scale(0.8);
+  transform: scale(0.8);
 }
 /* ################### END backdrop ################### */
 
@@ -894,26 +894,28 @@ body {
   top: 50%;
   left: 50%;
 
-  background: var(--color-white);
-
-  padding: 40px;
   width: 528px;
-  height: 581px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: opacity var(--anim-duration) var(--anim-timing-function),
     transform var(--anim-duration) var(--anim-timing-function);
+}
+
+.modal-form {
+  background: var(--color-white);
+  height: 581px;
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 /* ################### END modal ################### */
 
 /* ################### button close ################### */
 .button-close {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: calc(50% - 283px);
+  left: calc(50% + 226px);
 
   display: flex;
   justify-content: center;
@@ -931,7 +933,7 @@ body {
   margin: 0;
   cursor: pointer;
   z-index: 102;
-  transform: translate(226px, -283px) scale(1);
+  transform: scale(1);
 
   transition: transform var(--anim-duration) var(--anim-timing-function);
 }
@@ -1001,7 +1003,7 @@ body {
   width: 100%;
   height: 40px;
   padding: 12px 12px 12px 42px;
-  color: currentColor;
+  color: var(--secondary-text-color);
   outline: var(--accent-color);
   transition: border var(--anim-duration) var(--anim-timing-function);
 }
@@ -1025,6 +1027,7 @@ body {
 }
 
 .modal-comment {
+  color: var(--secondary-text-color);
   width: 448px;
   height: 120px;
 
