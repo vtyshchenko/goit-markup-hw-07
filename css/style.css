@@ -679,12 +679,7 @@ body {
 
 /* **************** PORTFOLIO HTML **************** */
 /* ################### FILTERS AND CARDS ################### */
-.filters-and-cards-title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.filters-list {
+.filters__list {
   display: flex;
   justify-content: center;
 
@@ -694,11 +689,11 @@ body {
   margin-bottom: 50px;
 }
 
-.filters-list-item {
+.filters__item {
   margin-right: 8px;
 }
 
-.filters-list-item-button {
+.filters__button {
   display: block;
   flex-wrap: wrap;
   font-size: 16px;
@@ -718,8 +713,8 @@ body {
     box-shadow var(--anim-duration) var(--anim-timing-function);
 }
 
-.filters-list-item-button:focus,
-.filters-list-item-button:hover {
+.filters__button:focus,
+.filters__button:hover {
   background-color: var(--accent-color);
   color: var(--color-white);
   cursor: pointer;
@@ -728,7 +723,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.cards-list {
+.cards__list {
   display: flex;
   flex-wrap: wrap;
 
@@ -740,7 +735,7 @@ body {
   margin-bottom: calc(-1 * var(--margin-30));
 }
 
-.cards-list-item {
+.cards__item {
   position: relative;
   box-sizing: border-box;
 
@@ -755,19 +750,19 @@ body {
   transition: box-shadow var(--anim-duration) var(--anim-timing-function);
 }
 
-.cards-list-item-link {
+.cards__link {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
 }
 
-.cards-list-item-link:focus .overlay,
-.cards-list-item-link:hover .overlay {
+.cards__link:focus .overlay,
+.cards__link:hover .overlay {
   transform: translatey(0);
   opacity: 1;
 }
 
-.cards-list-item-block {
+.cards__img {
   position: relative;
   overflow: hidden;
 }
@@ -791,25 +786,25 @@ body {
     opacity var(--anim-duration) var(--anim-timing-function);
 }
 
-.cards-list-item-link:focus,
-.cards-list-item-link:active,
-.cards-list-item-link:hover,
-.cards-list-item:focus,
-.cards-list-item:active,
-.cards-list-item:hover {
+.cards__link:focus,
+.cards__link:active,
+.cards__link:hover,
+.cards__item:focus,
+.cards__item:active,
+.cards__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.08),
     1px 4px 6px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.cards-list-item-text {
+.cards__text {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
 
-.cards-list-item-title {
+.cards__title {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -821,7 +816,7 @@ body {
   margin: 0 0 4px 0;
 }
 
-.cards-list-item-type {
+.cards__type {
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.87;
