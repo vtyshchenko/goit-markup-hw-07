@@ -65,7 +65,7 @@ body {
   text-decoration: none;
 }
 
-.logo-part-blue {
+.logo__part-web {
   color: var(--accent-color);
 }
 
@@ -114,25 +114,25 @@ body {
   color: #000000;
 }
 
+.header__logo {
+  margin-right: 93px;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-left: 93px;
-}
-
-.site-nav .menu-link {
   color: var(--secondary-text-color);
 }
 
-.menu-link {
+.menu__link {
   position: relative;
   display: block;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
+  color: var(--secondary-text-color);
   padding: 32px 0;
 
   transition: color var(--anim-duration) var(--anim-timing-function);
@@ -152,32 +152,32 @@ body {
   height: 4px;
 }
 
-.address-link {
+.contacts__address-link {
   display: inline-flex;
   align-items: center;
   color: var(--main-text-color);
 }
 
-.site-nav .current,
-.menu-link:hover,
-.menu-link:focus {
+.current,
+.menu__link:hover,
+.menu__link:focus {
   color: var(--accent-color);
 }
 
-.menu .menu-item + .menu-item {
+.menu__item + .menu__item {
   margin-left: 50px;
 }
 
-.mail-and-tel {
+.contacts {
   display: flex;
   padding: 0;
 }
 
-.mail-and-tel .mt-item + .mt-item {
+.contacts__item + .contacts__item {
   margin-left: 30px;
 }
 
-.mail-icon {
+.contacts__mail-icon {
   fill: currentColor;
 
   width: 16px;
@@ -185,7 +185,7 @@ body {
   margin-right: 10px;
 }
 
-.tel-icon {
+.contacts__tel-icon {
   fill: currentColor;
 
   width: 10px;
@@ -385,7 +385,7 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -396,7 +396,7 @@ body {
   max-width: 696px;
 }
 
-.hero-button {
+.hero__button {
   text-align: center;
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -414,8 +414,8 @@ body {
   transition: background-color var(--anim-duration) var(--anim-timing-function);
 }
 
-.hero-button:focus,
-.hero-button:hover {
+.hero__button:focus,
+.hero__button:hover {
   background-color: var(--color-blue);
   cursor: pointer;
 }

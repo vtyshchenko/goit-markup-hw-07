@@ -24,38 +24,41 @@
     <header class="header">
       <div class="container header-content">
         <nav class="site-nav list">
-          <a class="logo link" href="./index.html" lang="en">
-            <span class="logo-part-blue">Web</span>Studio
+          <a class="logo header__logo link" href="./index.html" lang="en">
+            <span class="logo__part-web">Web</span>Studio
           </a>
           <ul class="menu list">
-            <li class="menu-item">
-              <a class="menu-link current link" href="./index.html">Студия</a>
+            <li class="menu__item">
+              <a class="menu__link current link" href="./index.html">Студия</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html">Портфолио</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="">Контакты</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="mail-and-tel list">
-          <li class="mt-item">
+        <ul class="contacts list">
+          <li class="contacts__item">
             <a
-              class="menu-link address-link link"
+              class="menu__link contacts__address-link link"
               href="mailto:info@devstudio.com"
               lang="en"
             >
-              <svg class="mail-icon">
+              <svg class="contacts__mail-icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="mt-item">
-            <a class="menu-link address-link link" href="tel:+380961111111">
-              <svg class="tel-icon">
+          <li class="contacts__item">
+            <a
+              class="menu__link contacts__address-link link"
+              href="tel:+380961111111"
+            >
+              <svg class="contacts__tel-icon">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -69,9 +72,9 @@
       <!-- HERO -->
       <section class="hero">
         <!-- <div class="container"> -->
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
 
-        <button class="hero-button" type="button" data-modal-open>
+        <button class="hero__button" type="button" data-modal-open>
           Заказать услугу
         </button>
         <!-- </div> -->
@@ -412,7 +415,7 @@
       <div class="container footer-list">
         <div>
           <a href="./index.html" class="logo-white link" lang="en">
-            <span class="logo-part-blue">Web</span>Studio
+            <span class="logo__part-web">Web</span>Studio
           </a>
           <address class="address-house">
             <ul class="address-list list">
@@ -525,7 +528,13 @@
             <label class="modal-group">
               <span class="modal-label">Телефон</span>
               <span class="modal-input-group">
-                <input class="modal-input-info" type="tel" name="phome" />
+                <input
+                  class="modal-input-info"
+                  type="tel"
+                  name="phome"
+                  pattern=""
+                  title=""
+                />
                 <svg class="modal-input-icon">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
