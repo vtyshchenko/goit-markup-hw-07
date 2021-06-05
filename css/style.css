@@ -484,7 +484,7 @@ body {
   padding-bottom: 94px;
 }
 
-.work-title {
+.work__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -497,27 +497,23 @@ body {
   margin: 0 0 50px 0;
 }
 
-.work-list {
+.work__list {
   display: flex;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.work-list-item {
+.work__item {
   position: relative;
   width: calc((100% - 2 * var(--margin-30)) / 3);
 }
 
-.work-list-item:not(:last-child) {
+.work__item:not(:last-child) {
   margin-right: var(--margin-30);
 }
 
-.work-list-item-title {
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.work-list-item-title {
+.work__item-title {
   position: absolute;
   left: 0;
   bottom: 0;
