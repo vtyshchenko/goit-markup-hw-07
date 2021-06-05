@@ -427,24 +427,24 @@ body {
   padding-bottom: 47px;
 }
 
-.specifics-list {
+.specifics__list {
   display: flex;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.specifics-item {
+.specifics__item {
   font-size: 14px;
   letter-spacing: 0.03em;
   width: calc((100% - 3 * var(--margin-30)) / 4);
 }
 
-.specifics-item:not(:last-child) {
+.specifics__item:not(:last-child) {
   margin-right: var(--margin-30);
 }
 
-.specifics-icon-allign {
+.specifics__icon--allign-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,13 +456,13 @@ body {
   margin-bottom: 30px;
 }
 
-.specifics-icon {
+.specifics__icon {
   fill: currentColor;
   width: 70px;
   height: 70px;
 }
 
-.specifics-item-title {
+.specifics__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -473,7 +473,7 @@ body {
   margin-bottom: 10px;
 }
 
-.specifics-item-text {
+.specifics__text {
   line-height: 1.71;
 }
 /* ################### END SPECIFICS ################### */
