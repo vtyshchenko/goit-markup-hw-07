@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  padding: 0;
+
+  &__address-link {
+    display: inline-flex;
+    align-items: center;
+    color: $main-text-color;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__mail-icon {
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+
+  &__tel-icon {
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
