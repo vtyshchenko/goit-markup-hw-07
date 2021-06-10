@@ -480,7 +480,7 @@ body {
   margin-right: 93px;
 }
 
-.site-nav {
+.header__site-nav {
   display: flex;
   align-items: center;
 }
