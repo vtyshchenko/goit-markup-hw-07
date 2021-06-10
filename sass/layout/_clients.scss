@@ -1,7 +1,6 @@
 .clients__title {
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 0.03em;
   line-height: 1.17;
   text-align: center;
   color: $secondary-text-color;
@@ -21,8 +20,6 @@
   box-sizing: border-box;
   text-align: center;
   font-size: 16px;
-  letter-spacing: 0.03em;
-  line-height: 1.19;
   background-color: $color-white;
   color: $color-social-link;
   width: calc((100% - 6 * #{$margin-30}) / 6);

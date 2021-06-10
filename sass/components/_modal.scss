@@ -7,13 +7,12 @@
   border-radius: 4px;
 }
 
-/* ################### inputs ################### */
+// ################### inputs ###################
 .modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
   color: $secondary-text-color;
   margin-bottom: 12px;
 }
@@ -71,9 +70,9 @@
   }
 }
 
-/* ################### END inputs ################### */
+// ################### END inputs ###################
 
-/* ################### comment ################### */
+// ################### comment ###################
 .modal__group-comment {
   margin-bottom: 20px;
 }
@@ -95,16 +94,15 @@
     border: 1px solid $accent-color;
   }
 }
-/* ################### END comment ################### */
+// ################### END comment ###################
 
-/* ################### confirm checkbox ################### */
+// ################### confirm checkbox ###################
 .modal__confirm {
   display: flex;
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: $secondary-text-color;
-  letter-spacing: 0.03em;
   margin-bottom: 30px;
   transition: color $anim-duration $anim-timing-function;
 }
@@ -136,9 +134,9 @@
   }
 }
 
-/* ################### END confirm checkbox ################### */
+// ################### END confirm checkbox ###################
 
-/* ################### button submit ################### */
+// ################### button submit ###################
 
 .modal__button-submit {
   background-color: $accent-color;
