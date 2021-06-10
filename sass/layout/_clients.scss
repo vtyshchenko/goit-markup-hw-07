@@ -33,9 +33,7 @@
 }
 
 .clients__icon {
-  fill: currentColor;
-  width: 106px;
-  height: 60px;
+  @include settings__icons(currentColor, 106px, 60px);
 }
 
 .clients__link {

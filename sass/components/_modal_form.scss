@@ -30,9 +30,7 @@
     color $anim-duration $anim-timing-function;
 
   .modal__icon {
-    fill: currentColor;
-    width: 18px;
-    height: 18px;
+    @include settings__icons(currentColor, 18px, 18px);
   }
 
   &:hover {

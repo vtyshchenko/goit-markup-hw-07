@@ -13,16 +13,12 @@
   }
 
   &__mail-icon {
-    fill: currentColor;
-    width: 16px;
-    height: 12px;
+    @include settings__icons(currentColor, 16px, 12px);
     margin-right: 10px;
   }
 
   &__tel-icon {
-    fill: currentColor;
-    width: 10px;
-    height: 16px;
+    @include settings__icons(currentColor, 10px, 16px);
     margin-right: 10px;
   }
 }
